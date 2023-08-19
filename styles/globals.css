@@ -1,3 +1,14 @@
 * {
-  color: red;
+  box-sizing: border-box;
+}
+
+
+
+.navbar {
+  color: pink;
+  display: flex;
+}
+
+.footer {
+  color: green;
 }
