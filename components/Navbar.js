@@ -8,7 +8,6 @@ export default function Navbar() {
             <button className="fa-icon-btn">
                 <FontAwesomeIcon icon={faBars} style={{ fontSize: 30, color: 'purple' }} />
             </button>
-
         </nav>
     )
 }

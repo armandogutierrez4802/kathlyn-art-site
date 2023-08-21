@@ -1,6 +1,15 @@
 import Head from 'next/head';
+import Link from 'next/link';
+
+import Carousel from '@/components/Carousel';
 
 export default function Home() {
+
+  const handleClick = () => {
+    return 0;
+  }
+
+
   return (
     <>
       <Head>
@@ -9,9 +18,26 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <h1>
-        Home Page
-      </h1>
+      <div className="home-intro">
+        <h1>
+          Hello! Welcome to my website
+        </h1>
+        <p>
+          alskdj alskdf alsdkjf ajad jadlfk jak ljasdlf jaskd jasdk l;a jfksa jsal jksald jkal ja lkjd
+        </p>
+      </div>
+
+      <div className="img-carousel">
+        <Carousel />
+      </div>
+
+
+      <div className="flex-center-row">
+        <button className="request-btn" onClick={handleClick}>
+          <Link href="/request">Request Quote</Link>
+        </button>
+      </div>
+
     </>
   )
 }
