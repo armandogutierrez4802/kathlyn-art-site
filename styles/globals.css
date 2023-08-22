@@ -6,6 +6,7 @@
 
 :root {
   --container-x-padding: 25px;
+  --footer-height: 50px;
 }
 
 body {
@@ -29,7 +30,16 @@ a {
 } */
 
 /* Layout Classes */
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
 
+#page-content {
+  padding-bottom: var(--footer-height);
+}
+
+/* Header & Footer */
 .navbar {
   color: pink;
   display: flex;
@@ -46,6 +56,11 @@ a {
 .footer {
   color: blue;
   text-align: center;
+  background: green;
+  width: 100%;
+  height: var(--footer-height);
+  position: absolute;
+  bottom: 0;
 }
 
 .fa-icon-btn {
@@ -62,15 +77,34 @@ a {
 
 .img-carousel {
   width: 100%;
-  height: 250px;
-  position: relative;
+  /* height: 300px; */
+  /* position: relative; */
   display: flex;
   justify-content: center;
   align-items: center;
   /* padding: 50px; */
+  /* height: 100px; */
+  overflow: scroll;
 }
 
-.next,
+img {
+  /* position: absolute; */
+  width: 100%;
+  max-width: 500px;
+  /* height: 100%; */
+  padding: 30px;
+}
+
+.request-btn {
+  font-size: 20px;
+  margin-top: 25px;
+  padding: 5px 8px;
+  border: none;
+}
+
+
+
+/* .next,
 .prev {
   top: calc(50% - 20px);
   position: absolute;
@@ -85,7 +119,7 @@ a {
   cursor: pointer;
   font-weight: bold;
   font-size: 18px;
-  z-index: 2;
+  z-index: 20;
 }
 
 .next {
@@ -95,22 +129,7 @@ a {
 .prev {
   left: 5vw;
   transform: scale(-1);
-}
-
-img {
-  position: absolute;
-  width: 100%;
-  max-width: 500px;
-  /* height: 100%; */
-}
-
-.request-btn {
-  font-size: 20px;
-  margin: 50px 0;
-  padding: 5px 8px;
-  border: none;
-}
-
+} */
 
 /* .refresh {
   padding: 10px;
