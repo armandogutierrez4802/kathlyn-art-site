@@ -7,7 +7,8 @@ import {
   useTransform,
 } from "framer-motion"
 
-import Carousel from '@/components/Carousel';
+import Carousel from '../components/Carousel';
+import { carouselImages } from "@/public/images";
 
 export default function Home() {
 
@@ -32,8 +33,12 @@ export default function Home() {
         </p>
       </div>
 
-      <div className="img-carousel">
-        <Carousel />
+      <div className="flex-center-row">
+        <div className="img-carousel">
+          {/* <Carousel /> */}
+          {carouselImages.map((img) =>
+            <Carousel image={img} />)}
+        </div>
       </div>
 
 
