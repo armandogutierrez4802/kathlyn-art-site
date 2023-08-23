@@ -1,11 +1,5 @@
 import Head from 'next/head';
 import Link from 'next/link';
-// import {} from 'next/font/google';
-import {
-  motion,
-  useMotionValue,
-  useTransform,
-} from "framer-motion"
 
 import Carousel from '../components/Carousel';
 import { carouselImages } from "@/public/images";
@@ -15,6 +9,7 @@ export default function Home() {
   const handleClick = () => {
     return 0;
   }
+
 
   return (
     <>
@@ -47,9 +42,6 @@ export default function Home() {
           <Link href="/request">Request Quote</Link>
         </button>
       </div>
-
-
-
 
     </>
   )

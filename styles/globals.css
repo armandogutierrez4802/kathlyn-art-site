@@ -10,7 +10,7 @@
 }
 
 body {
-  background-color: grey;
+  background-color: gray;
 }
 
 a {
@@ -47,18 +47,14 @@ a {
   align-items: center;
   padding: 5px 15px;
   height: 75px;
-  background: red;
+  background: green;
   position: sticky;
   top: 0;
   z-index: 100;
 }
 
-#content-wrap {
-  padding-bottom: var(--footer-height);
-}
-
 .footer {
-  background: blue;
+  color: blue;
   text-align: center;
   background: green;
   width: 100%;
@@ -77,7 +73,6 @@ a {
   text-align: center;
   width: 100%;
   padding: var(--container-x-padding);
-  background: green;
 }
 
 .img-carousel {

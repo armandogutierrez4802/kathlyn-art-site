@@ -10,7 +10,23 @@ import { carouselImages } from "@/public/images";
 export default function Carousel({ image }) {
     return (
         <>
-            <AnimatePresence initial={false} custom={direction}>
+            {/* <h1>hi</h1> */}
+            <img src={image} />
+            {/* <h1>HELLO</h1> */}
+
+            {/* <AnimatePresence>
+                {carouselImages.map((img) =>
+                    <motion.img
+                        key={img}
+                        src={img}
+                        initial={{ opacity: 0, y: 200 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                    />
+                )}
+            </AnimatePresence> */}
+
+            {/* <AnimatePresence>
                 <motion.img
                     key={image}
                     src={image}
@@ -18,7 +34,7 @@ export default function Carousel({ image }) {
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
                 />
-            </AnimatePresence>
+            </AnimatePresence> */}
         </>
     )
 };
