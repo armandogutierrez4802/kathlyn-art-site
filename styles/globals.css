@@ -18,16 +18,24 @@ a {
   color: black;
 }
 
+button {
+  background: none;
+  border: none;
+  padding: 20px;
+}
+
 /* Utility Classes */
+
+.relative-parent {
+  position: relative;
+  /* For .next & .prev buttons in img-carousel */
+}
+
 .flex-center-row {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-/* .container {
-  width: 90vw;
-} */
 
 /* Layout Classes */
 #page-container {
@@ -76,15 +84,32 @@ a {
 }
 
 .img-carousel {
+  /* position: relative; */
   width: 100%;
   display: flex;
   overflow: scroll;
 }
 
 img {
-  width: 90%;
+  width: 100%;
+  height: 100%;
   max-width: 500px;
   padding: 15px;
+}
+
+.prev,
+.next {
+  color: white;
+  position: absolute;
+  top: calc(35%);
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
 }
 
 .request-btn {
